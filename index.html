@@ -538,6 +538,7 @@
       function iniciarTodo() {
         // Reproducir audio tras la interacción del usuario
         if (musica) {
+          musica.volume = 0.7;
           musica.play().catch(err => console.log("Audio esperando interacción", err));
         }
 
