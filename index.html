@@ -586,12 +586,12 @@
 
       // Remover escuchadores para evitar duplicar ejecuciones al tocar de nuevo
         intro.removeEventListener('click', iniciarTodo);
-        intro.removeEventListener('touchstart', iniciarTodo);
+      //  intro.removeEventListener('touchstart', iniciarTodo);
       }
 
       // Escuchar el toque en cualquier parte de la pantalla
       intro.addEventListener('click', iniciarTodo);
-      intro.addEventListener('touchstart', iniciarTodo);
+    //  intro.addEventListener('touchstart', iniciarTodo);
 
     });
 
