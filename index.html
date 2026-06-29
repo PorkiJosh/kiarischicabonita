@@ -532,8 +532,7 @@
 
     window.addEventListener('DOMContentLoaded', () => {
 
-    const musica = document.getElementById('musica-romantica');
-      if (musica) musica.volume = 0.6; // Volumen al 60%
+       const musica = document.getElementById('musica-romantica');
 
       function iniciarTodo() {
         // Reproducir audio tras la interacción del usuario
@@ -583,13 +582,13 @@
       }, 2200);
 
       // Remover escuchadores para evitar duplicar ejecuciones al tocar de nuevo
-        window.removeEventListener('click', iniciarTodo);
-        window.removeEventListener('touchstart', iniciarTodo);
+        intro.removeEventListener('click', iniciarTodo);
+        intro.removeEventListener('touchstart', iniciarTodo);
       }
 
       // Escuchar el toque en cualquier parte de la pantalla
-      window.addEventListener('click', iniciarTodo);
-      window.addEventListener('touchstart', iniciarTodo);
+      intro.addEventListener('click', iniciarTodo);
+      intro.addEventListener('touchstart', iniciarTodo);
 
     });
 
